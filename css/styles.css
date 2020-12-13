@@ -10095,11 +10095,13 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
   }
   #mainNav .navbar-brand img {
     height: 2rem;
-    transition: height 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
@@ -10107,6 +10109,8 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
+    visibility: initial;
+    opacity: 1;
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
